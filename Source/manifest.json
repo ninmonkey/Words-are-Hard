@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Words are Hard",
+	"version": "0.1",
+	"description": "Does it bother you when words are used incorrectly? Than this addon is four yew.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
